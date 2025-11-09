@@ -270,7 +270,7 @@ export default function ChatBot() {
                 className="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
-                onClick={handleSendMessage}
+                onClick={() => handleSendMessage()}
                 disabled={!inputValue.trim()}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition disabled:bg-gray-300 disabled:cursor-not-allowed"
                 aria-label="Gửi tin nhắn"
