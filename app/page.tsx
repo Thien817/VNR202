@@ -1,17 +1,33 @@
 import Link from 'next/link'
+import HeroImage from '@/components/HeroImage'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Bình Minh Của Thời Kì Đổi Mới
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 font-semibold">
-            Giai đoạn 1986 - 1996
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-block bg-yellow-100 border-l-4 border-yellow-500 px-4 py-2 mb-6 rounded">
+              <p className="text-yellow-800 font-semibold text-sm uppercase tracking-wide">
+                Câu hỏi nghiên cứu
+              </p>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              Bình Minh Của Thời Kì Đổi Mới
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-700 mb-4 font-semibold">
+              Giai đoạn 1986 - 1996
+            </p>
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 md:p-8 max-w-4xl mx-auto mt-6">
+              <p className="text-lg md:text-xl text-gray-800 font-medium leading-relaxed">
+                <span className="text-blue-700 font-bold">CQ:</span> Tại sao gọi giai đoạn 1986 - 1996 là bình minh của thời kỳ đổi mới?
+              </p>
+            </div>
+          </div>
+
+          {/* Hero Image - Đại hội VI */}
+          <HeroImage />
           
           <div className="bg-white rounded-lg shadow-xl p-8 md:p-12 mb-12 text-left">
             <div className="prose prose-lg max-w-none">
